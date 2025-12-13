@@ -6,6 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import pages.MainPage;
 
 import java.time.Duration;
@@ -21,6 +22,7 @@ public class QuestionsTest {
     public void setUp() {
         // создаем WebDriver, который будет работать с нашим браузером
         driver = new ChromeDriver();
+        // driver = new FirefoxDriver();
         // ожидание
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
     }

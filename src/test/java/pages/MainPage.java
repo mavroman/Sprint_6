@@ -64,7 +64,8 @@ public class MainPage {
             WebElement question = elements.get(index);
             // Скроллим до вопроса
             ((JavascriptExecutor)driver).executeScript("arguments[0].scrollIntoView();", question);
-            question.click();
+            // тап по вопросу
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", question);
         }
     }
 
